@@ -6,7 +6,21 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+header {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+}
+main {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+}
+footer {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+}
 header nav {
   display: flex;
   justify-content: space-between;
@@ -15,6 +29,7 @@ header nav {
   margin: 0 auto;
   max-width: 1600px;
   width: 100%;
+  margin: 0 auto;
   background-color: #1a0b2e;
   border-bottom: 1px solid #412567;
 }
@@ -71,6 +86,9 @@ nav .sub-btn {
 /* Hero section */
 
 .banner {
+  max-width: 1200x;
+  width: 100%;
+  margin: 0 auto;
   padding: 100px;
   text-align: center;
   background: url(./assets/hero-bg.png);
@@ -83,6 +101,25 @@ nav .sub-btn {
   background-position: center;
   background-size: contain;
   padding: 70px 107px 81px 107px;
+}
+
+.easy-fade {
+  animation: simpleFade 3s infinite alternate;
+}
+
+@keyframes simpleFade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.banner-content {
+  max-width: 550px;
+  width: 100%;
+  margin: 0 auto;
 }
 .new {
   font-size: 18px;
@@ -299,8 +336,9 @@ nav .sub-btn {
 
 .episodes-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  /* grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); */
   gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .episode-card {
@@ -368,7 +406,7 @@ nav .sub-btn {
   border-radius: 40px;
   padding: 40px;
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   align-items: center;
   gap: 24px;
 }
@@ -403,16 +441,14 @@ footer {
   padding: 120px;
   color: white;
   max-width: 1600px;
+  width: 100%;
   margin: 0 auto;
 }
 
-.footer-section {
-  max-width: 1200px;
-  margin: 0 auto;
-}
 .footer-section .footer-logo {
   margin-bottom: 2rem;
-  width: 400px;
+  max-width: 400px;
+  width: 100%;
 }
 
 .footer-social {
@@ -502,17 +538,31 @@ footer {
     padding: 40px 20px;
   }
 
+  #about br {
+    content: " ";
+    display: inline;
+  }
+
+  #about h1 {
+    font-size: 2rem;
+    white-space: nowrap;
+  }
   .stats {
     grid-template-columns: repeat(2, 1fr);
-    padding: 40px 20px;
-    row-gap: 40px;
+    grid-template-rows: auto;
+    gap: 8px;
+    padding: 0;
+    max-width: 400px;
+    width: 100%;
   }
 
   .stats div h1 {
-    font-size: 40px;
+    font-size: 16px;
+    margin-top: 20px;
   }
   .stats div p {
     font-size: 14px;
+    white-space: wrap;
   }
   .about-title {
     padding: 20px 40px;
@@ -522,12 +572,6 @@ footer {
   .about-title h1 {
     font-size: 2rem;
     font-weight: 700;
-  }
-  .about-title p {
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: center;
-    padding: 0 10px;
   }
 
   .features-grid {
@@ -581,7 +625,6 @@ footer {
   }
 
   #meet-host {
-    margin: 0;
     padding: 40px 20px;
   }
 
@@ -599,8 +642,8 @@ footer {
   }
 
   footer {
-    margin: 0;
     padding: 40px 20px;
+    align-items: center;
   }
 
   .footer-logo {
