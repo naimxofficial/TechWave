@@ -149,7 +149,7 @@ nav .sub-btn {
 
 /* about section */
 
-.about {
+#about {
   background-color: #1a0b2e;
   padding: 50px 200px;
   color: white;
@@ -163,19 +163,19 @@ nav .sub-btn {
   margin: 0 auto;
 }
 
-.about .about-title {
+#about .about-title {
   padding: 0px 20px;
   max-width: 900px;
   width: 100%;
 }
 
-.about h1 {
+#about h1 {
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 16px;
 }
 
-.about p {
+#about p {
   line-height: 20px;
   opacity: 70%;
   padding-bottom: 40px;
@@ -207,7 +207,7 @@ nav .sub-btn {
 .why-choose-section {
   background-color: #230e3d;
   color: #ffffff;
-  padding: 120px 200px;
+  padding: 80px 20px;
   text-align: center;
   max-width: 1600px;
   margin: 0 auto;
@@ -286,6 +286,8 @@ nav .sub-btn {
   padding: 120px 200px 60px 200px;
   color: white;
   background-color: #1a0b2e;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 #featured-episodes h2 {
@@ -296,21 +298,21 @@ nav .sub-btn {
 }
 
 .episodes-grid {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
 }
 
 .episode-card {
   border-radius: 20px;
-  max-width: 33%;
   /* overflow: hidden; */
   background-color: #250d44;
 }
 
 .iframes {
   width: 100%;
-  height: 200px;
+  aspect-ratio: 16 / 9;
+  height: auto;
   object-fit: cover;
 }
 
@@ -350,6 +352,8 @@ nav .sub-btn {
   background-color: #1a0b2e;
   padding: 60px 200px 120px 200px;
   color: white;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 #meet-host h2 {
@@ -363,7 +367,8 @@ nav .sub-btn {
   background-color: #250d44;
   border-radius: 40px;
   padding: 40px;
-  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 24px;
 }
@@ -397,8 +402,14 @@ footer {
   text-align: center;
   padding: 120px;
   color: white;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
+.footer-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 .footer-section .footer-logo {
   margin-bottom: 2rem;
   width: 400px;
@@ -406,6 +417,8 @@ footer {
 
 .footer-social {
   display: flex;
+  flex-wrap: wrap;
+  row-gap: 16px;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -427,6 +440,7 @@ footer {
   line-height: 24px;
   opacity: 60%;
   color: #fafafa;
+  margin-top: 1rem;
 }
 @media screen and (max-width: 576px) {
   header nav {
@@ -484,7 +498,7 @@ footer {
     transform: translate(5px, 5px);
   }
 
-  .about {
+  #about {
     padding: 40px 20px;
   }
 
@@ -545,16 +559,52 @@ footer {
     font-size: 1rem;
   }
 
-  #featured-episodes h2 {
-    font-size: 2rem;
+  #featured-episodes {
+    margin: 0;
+    padding: 40px 20px;
   }
 
-  .episodes-grid {
-    flex-direction: column;
+  #featured-episodes h2 {
+    font-size: 2rem;
   }
 
   .iframes {
     max-width: 100%;
     margin-bottom: 20px;
+  }
+
+  .episodes-grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    gap: 1rem;
+    text-align: left;
+  }
+
+  #meet-host {
+    margin: 0;
+    padding: 40px 20px;
+  }
+
+  #meet-host h2 {
+    font-size: 2rem;
+  }
+
+  .host-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  footer {
+    margin: 0;
+    padding: 40px 20px;
+  }
+
+  .footer-logo {
+    width: 220px;
+    height: 32px;
   }
 }
