@@ -1,36 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TechWave</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet" />
     <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <header>
-      <nav>
-        <img src="./assets/TechWave.png" alt="TechWave logo" />
-        <input type="checkbox" id="menu-toggle" />
-        <label for="menu-toggle" class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
-        <ul>
-          <li><a href="#About">About</a></li>
-          <li><a href="#Episodes">Episodes</a></li>
-          <li><a href="#Host">Host</a></li>
-        </ul>
-        <button>
-          Subscribe <img src="./assets/ArrowRight.png" alt="ArrowRight" />
-        </button>
-      </nav>
+        <nav>
+            <img src="./assets/TechWave.png" alt="TechWave logo" />
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Episodes">Episodes</a></li>
+                <li><a href="#Host">Host</a></li>
+            </ul>
+            <button class="sub-btn">
+                <span>Subscribe</span> <img class="right-arrow" src="./assets/ArrowRight.png" alt="ArrowRight" />
+            </button>
+        </nav>
+
+
+        <section class="banner">
+        <span class="new">New</span>
+        <div class="banner-img">
+            <img src="./assets/microphone.png" alt="">
+        </div>
+        <div class="banner-content">
+            <h1>TechWave</h1>
+            <p>Your daily dose of tech insights, productivity hacks, and personal growth</p>
+            
+            <button class="btn-1"> 
+            <img src="./assets/spotify.png" alt="">
+            <span>Listen on Spotify</span>
+            </button>
+             <button class="btn-2">
+                <img src="./assets/message.png" alt="">
+                <span>Subscribe</span>
+            </button>
+        </div>
+    </section>
     </header>
-  </body>
+</body>
+
 </html>
