@@ -164,8 +164,9 @@ nav .sub-btn {
 }
 
 .about .about-title {
-  padding: 0px 190px;
-  width: 1200px;
+  padding: 0px 20px;
+  max-width: 900px;
+  width: 100%;
 }
 
 .about h1 {
@@ -228,6 +229,7 @@ nav .sub-btn {
   gap: 30px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: auto;
 }
 
 .headphone {
@@ -276,6 +278,155 @@ nav .sub-btn {
 .feature-card p {
   line-height: 24px;
   opacity: 60%;
+}
+
+/* Featured Episodes */
+
+#featured-episodes {
+  padding: 120px 200px 60px 200px;
+  color: white;
+  background-color: #1a0b2e;
+}
+
+#featured-episodes h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.episodes-grid {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.episode-card {
+  border-radius: 20px;
+  max-width: 33%;
+  /* overflow: hidden; */
+  background-color: #250d44;
+}
+
+.iframes {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.episode-content {
+  padding: 24px;
+}
+
+.episode-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.episode-description {
+  line-height: 24px;
+  opacity: 60%;
+  margin-bottom: 12px;
+}
+
+.episode-duration {
+  line-height: 24px;
+  font-weight: 600;
+  color: #00ff88;
+}
+
+.episode-clock {
+  display: inline-flex;
+  gap: 6px;
+}
+.episode-clock img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Meet the host  */
+
+#meet-host {
+  background-color: #1a0b2e;
+  padding: 60px 200px 120px 200px;
+  color: white;
+}
+
+#meet-host h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.host-card {
+  background-color: #250d44;
+  border-radius: 40px;
+  padding: 40px;
+  display: inline-flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.host-name {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.host-description {
+  line-height: 24px;
+  opacity: 60%;
+  margin-bottom: 16px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 16px;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+}
+
+footer {
+  background: url(./assets/footer-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  padding: 120px;
+  color: white;
+}
+
+.footer-section .footer-logo {
+  margin-bottom: 2rem;
+  width: 400px;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+  margin-bottom: 2rem;
+}
+
+.footer-social img {
+  width: 20px;
+}
+
+.footer-social span {
+  opacity: 60%;
+  font-weight: 500;
+
+  margin-left: 8px;
+}
+.footer-section p {
+  line-height: 24px;
+  opacity: 60%;
+  color: #fafafa;
 }
 @media screen and (max-width: 576px) {
   header nav {
@@ -351,6 +502,7 @@ nav .sub-btn {
   }
   .about-title {
     padding: 20px 40px;
+    width: 100%;
   }
 
   .about-title h1 {
@@ -358,7 +510,10 @@ nav .sub-btn {
     font-weight: 700;
   }
   .about-title p {
-    font-size: 8px;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    padding: 0 10px;
   }
 
   .features-grid {
@@ -388,5 +543,18 @@ nav .sub-btn {
   }
   .features-grid p {
     font-size: 1rem;
+  }
+
+  #featured-episodes h2 {
+    font-size: 2rem;
+  }
+
+  .episodes-grid {
+    flex-direction: column;
+  }
+
+  .iframes {
+    max-width: 100%;
+    margin-bottom: 20px;
   }
 }
