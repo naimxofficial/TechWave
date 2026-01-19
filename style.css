@@ -52,7 +52,6 @@ nav .sub-btn {
   height: 20px;
 }
 
-
 #menu-toggle {
   display: none;
 }
@@ -127,7 +126,6 @@ nav .sub-btn {
   transition: 0.3s;
 }
 
-
 .btn-2 {
   background-color: #1a0b2e;
   gap: 8px;
@@ -137,24 +135,151 @@ nav .sub-btn {
   color: #00ff88;
   gap: 8x;
   padding: 12px 20px;
-  border: 1px solid #00FF88;
+  border: 1px solid #00ff88;
   border-radius: 10000px;
   cursor: pointer;
   transition: 0.3s;
 }
 
-
-.btn-1:hover , .btn-2:hover , .sub-btn:hover{
+.btn-1:hover,
+.btn-2:hover,
+.sub-btn:hover {
   transform: scale(1.1);
 }
 
+/* about section */
 
+.about {
+  background-color: #1a0b2e;
+  padding: 50px 200px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  vertical-align: center;
+  align-items: center;
+  text-align: center;
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+}
 
+.about .about-title {
+  padding: 0px 190px;
+  width: 1200px;
+}
 
+.about h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.about p {
+  line-height: 20px;
+  opacity: 70%;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.stats {
+  padding: 40px 200px 120px 200px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 80px;
+  border-top: 1px solid #ffffff1a;
+}
+
+.stats h1 {
+  font-size: 3rem;
+  color: #00ff88;
+  font-weight: 900;
+}
+
+.stats p {
+  line-height: 20px;
+  opacity: 70%;
+  white-space: nowrap;
+}
+
+/* Why Choose TechWave section */
+
+.why-choose-section {
+  background-color: #230e3d;
+  color: #ffffff;
+  padding: 120px 200px;
+  text-align: center;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 3rem;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.features-grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.headphone {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.mobile {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.global {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.exclusive {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+.resource {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.feature-card {
+  background-color: rgba(53, 17, 101, 0.4);
+  border-radius: 20px;
+  padding: 30px;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.feature-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.feature-card p {
+  line-height: 24px;
+  opacity: 60%;
+}
 @media screen and (max-width: 576px) {
   header nav {
     padding: 16px 20px;
-    
   }
 
   .hamburger {
@@ -191,17 +316,77 @@ nav .sub-btn {
     padding: 20px;
     background-size: cover;
   }
-  
-  .banner-img{
-    
+
+  .banner h1 {
+    font-size: 40px;
+  }
+
+  .banner-img {
     background-size: 70%;
   }
-  .banner-img img{
+  .banner-img img {
     width: 60%;
     height: auto;
   }
 
-  .new{
+  .new {
     transform: translate(5px, 5px);
+  }
+
+  .about {
+    padding: 40px 20px;
+  }
+
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 40px 20px;
+    row-gap: 40px;
+  }
+
+  .stats div h1 {
+    font-size: 40px;
+  }
+  .stats div p {
+    font-size: 14px;
+  }
+  .about-title {
+    padding: 20px 40px;
+  }
+
+  .about-title h1 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .about-title p {
+    font-size: 8px;
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    gap: 1rem;
+  }
+
+  .why-choose-section {
+    padding: 60px 20px;
+  }
+
+  .headphone,
+  .mobile,
+  .global,
+  .exclusive,
+  .resource {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+  .features-grid h3 {
+    font-size: 22px;
+  }
+  .features-grid p {
+    font-size: 1rem;
   }
 }

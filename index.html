@@ -1,59 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TechWave</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet" />
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <img src="./assets/TechWave.png" alt="TechWave logo" />
-            <input type="checkbox" id="menu-toggle" />
-            <label for="menu-toggle" class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-            <ul>
-                <li><a href="#About">About</a></li>
-                <li><a href="#Episodes">Episodes</a></li>
-                <li><a href="#Host">Host</a></li>
-            </ul>
-            <button class="sub-btn">
-                <span>Subscribe</span> <img class="right-arrow" src="./assets/ArrowRight.png" alt="ArrowRight" />
-            </button>
-        </nav>
+      <nav>
+        <img src="./assets/TechWave.svg" alt="TechWave logo" />
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <ul>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Episodes">Episodes</a></li>
+          <li><a href="#Host">Host</a></li>
+        </ul>
+        <button class="sub-btn">
+          <span>Subscribe</span>
+          <img
+            class="right-arrow"
+            src="./assets/ArrowRight.svg"
+            alt="ArrowRight"
+          />
+        </button>
+      </nav>
 
-
-        <section class="banner">
+      <section class="banner">
         <span class="new">New</span>
         <div class="banner-img">
-            <img src="./assets/microphone.png" alt="">
+          <img src="./assets/microphone.png" alt="" />
         </div>
         <div class="banner-content">
-            <h1>TechWave</h1>
-            <p>Your daily dose of tech insights, productivity hacks, and personal growth</p>
-            
-            <button class="btn-1"> 
-            <img src="./assets/spotify.png" alt="">
-            <span>Listen on Spotify</span>
-            </button>
-             <button class="btn-2">
-                <img src="./assets/message.png" alt="">
-                <span>Subscribe</span>
-            </button>
-        </div>
-    </section>
-    </header>
-</body>
+          <h1>TechWave</h1>
+          <p>
+            Your daily dose of tech insights, productivity hacks, and personal
+            growth
+          </p>
 
+          <button class="btn-1">
+            <img src="./assets/spotify.svg" alt="" />
+            <span>Listen on Spotify</span>
+          </button>
+          <button class="btn-2">
+            <img src="./assets/message-svg.svg" alt="" />
+            <span>Subscribe</span>
+          </button>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="about">
+        <div class="about-title">
+          <h1>About The Podcast</h1>
+          <p>
+            TechWave is your go-to podcast for staying ahead in the fast-paced
+            world of technology. <br />
+            We break down complex topics into digestible insights, explore
+            productivity strategies that actually work, <br />
+            and share stories of personal growth from industry leaders.
+            <br /><br />
+            Join thousands of young professionals and tech enthusiasts who start
+            their day with TechWave.
+          </p>
+        </div>
+
+        <div class="stats">
+          <div>
+            <h1>150K+</h1>
+            <p>MONTHLY LISTENERS</p>
+          </div>
+          <div>
+            <h1>200+</h1>
+            <p>EPISODES PUBLISHED</p>
+          </div>
+          <div>
+            <h1>4.9&Star;</h1>
+            <p>AVERAGE RATING</p>
+          </div>
+          <div>
+            <h1>50+</h1>
+            <p>INDUSTRY EXPERTS</p>
+          </div>
+        </div>
+      </section>
+      <!-- Why choose TechWave section -->
+      <section class="why-choose-section">
+        <div class="container">
+          <h2 class="section-title">Why Choose TechWave</h2>
+          <div class="features-grid">
+            <div class="feature-card headphone">
+              <img class="icon" src="./assets/headphone.png" />
+              <h3>Premium Audio Quality</h3>
+              <p>
+                Experience crystal-clear sound with professional equipment and
+                expert audio production for optimal listening across all
+                devices.
+              </p>
+            </div>
+            <div class="feature-card mobile">
+              <img class="icon" src="./assets/device.png" />
+              <h3>Mobile Friendly</h3>
+              <p>
+                Listen on the go with seamless experience and offline downloads.
+              </p>
+            </div>
+            <div class="feature-card global">
+              <img class="icon" src="./assets/location.png" />
+              <h3>Global Community</h3>
+              <p>Connect with tech enthusiasts from over 100 countries.</p>
+            </div>
+            <div class="feature-card exclusive">
+              <img class="icon" src="./assets/zap-fast.svg" />
+              <h3>Exclusive Interviews</h3>
+              <p>
+                Get unprecedented access to industry titans, founders, and tech
+                visionaries. Our host dives deep into their journeys, failures,
+                and success strategies.
+              </p>
+            </div>
+            <div class="feature-card resource">
+              <img class="icon" src="./assets/resource.png" />
+              <h3>Rich Resources</h3>
+              <p>
+                Access show notes, transcripts, and recommended readings for
+                deeper dives into each episode.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
